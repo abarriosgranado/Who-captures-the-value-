@@ -11,34 +11,35 @@
       font-family: Georgia, "Times New Roman", serif;
       background: #f4efe6;
       color: #25211d;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 19px;
     }
 
     .page {
-      max-width: 980px;
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 40px 22px 70px;
+      padding: 60px 58px 90px;
     }
 
     .hero {
       background: #2f3f3d;
       color: #fff;
-      padding: 56px 42px;
+      padding: 64px 58px;
       border-radius: 28px;
-      margin-bottom: 34px;
+      margin-bottom: 52px;
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
     }
 
     .hero h1 {
       margin: 0;
-      font-size: 52px;
-      line-height: 1.05;
+      font-size: 56px;
+      line-height: 1.08;
       font-weight: 500;
     }
 
     .hero h2 {
-      margin: 18px 0 0;
-      font-size: 24px;
+      margin: 22px 0 0;
+      font-size: 27px;
       font-weight: 400;
       color: #d8c8a8;
     }
@@ -46,75 +47,88 @@
     .section {
       background: #fffaf2;
       border-radius: 22px;
-      padding: 34px;
-      margin-bottom: 24px;
+      padding: 52px 58px;
+      margin-bottom: 46px;
       box-shadow: 0 10px 28px rgba(55, 43, 28, 0.08);
       border: 1px solid #eadfcd;
     }
 
     .section h2 {
       margin-top: 0;
-      font-size: 30px;
+      margin-bottom: 32px;
+      font-size: 34px;
       color: #2f3f3d;
       border-bottom: 2px solid #c7a46b;
-      padding-bottom: 10px;
+      padding-bottom: 16px;
     }
 
     .section h3 {
-      margin-top: 26px;
-      font-size: 22px;
+      margin-top: 34px;
+      margin-bottom: 16px;
+      font-size: 25px;
       color: #8a5a2b;
     }
 
     p {
-      font-size: 18px;
-      margin: 0 0 18px;
+      font-size: 19px;
+      margin: 0 0 22px;
     }
 
     ul {
-      margin-top: 10px;
-      margin-bottom: 24px;
-      padding-left: 24px;
+      margin-top: 12px;
+      margin-bottom: 30px;
+      padding-left: 30px;
     }
 
     li {
-      font-size: 18px;
-      margin-bottom: 8px;
+      font-size: 19px;
+      margin-bottom: 10px;
     }
 
     .formula {
       background: #efe1cb;
       border-left: 8px solid #8a5a2b;
-      padding: 18px 22px;
+      padding: 22px 26px;
       border-radius: 12px;
-      font-size: 20px;
+      font-size: 21px;
       font-weight: bold;
-      margin: 20px 0;
+      margin: 28px 0;
     }
 
     .chart-card {
       background: #f7f1e8;
-      border: 1px dashed #c7a46b;
-      border-radius: 18px;
-      padding: 22px;
-      margin-top: 18px;
+      border: 1px solid #e0d3bf;
+      border-radius: 20px;
+      padding: 32px;
+      margin-top: 34px;
+      margin-bottom: 34px;
     }
 
     .chart-card h3 {
       margin-top: 0;
     }
 
+    .chart-image {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      margin-top: 24px;
+      border: 1px solid #ded3c2;
+      background: #f4efe6;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 20px;
+      gap: 24px;
+      margin-top: 28px;
+      margin-bottom: 34px;
     }
 
     .mini-card {
       background: #f7f1e8;
       border-radius: 16px;
-      padding: 22px;
+      padding: 28px;
       border-top: 6px solid #8a5a2b;
     }
 
@@ -126,27 +140,43 @@
       background: #2f3f3d;
       color: #f7f1e8;
       border-radius: 22px;
-      padding: 28px 34px;
+      padding: 38px 46px;
       font-style: italic;
-      font-size: 16px;
+      font-size: 17px;
+      margin-top: 52px;
     }
 
     .disclaimer p {
-      font-size: 16px;
+      font-size: 17px;
       margin: 0;
     }
 
     @media (max-width: 760px) {
+      .page {
+        padding: 32px 18px 60px;
+      }
+
+      .hero {
+        padding: 42px 28px;
+        margin-bottom: 34px;
+      }
+
       .hero h1 {
         font-size: 38px;
       }
 
       .hero h2 {
-        font-size: 20px;
+        font-size: 21px;
       }
 
       .section {
-        padding: 24px;
+        padding: 30px 24px;
+        margin-bottom: 34px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
       }
 
       .grid {
@@ -155,7 +185,7 @@
 
       p,
       li {
-        font-size: 16px;
+        font-size: 17px;
       }
     }
   </style>
@@ -268,6 +298,10 @@
         <p>
           Compares revenue-weighted EBITDA margins across importers, roasters and retail chains.
         </p>
+        <img
+          class="chart-image"
+          src="graph_1_ebitda_margin_by_segment.png"
+          alt="Coffee value chain EBITDA margin by segment">
       </div>
 
       <div class="chart-card">
@@ -275,6 +309,10 @@
         <p>
           Compares the profitability of specialty coffee importers against the mainstream benchmark included in the sample.
         </p>
+        <img
+          class="chart-image"
+          src="graph_2_importers_specialty_vs_mainstream.png"
+          alt="Importers specialty vs mainstream EBITDA margin">
       </div>
 
       <div class="chart-card">
@@ -282,6 +320,10 @@
         <p>
           Explores the relationship between company size and EBITDA margin within the retail segment.
         </p>
+        <img
+          class="chart-image"
+          src="graph_3_revenue_scale_vs_ebitda_margin.png"
+          alt="Chains revenue scale vs EBITDA margin">
       </div>
     </section>
 
