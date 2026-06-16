@@ -4,7 +4,7 @@ A data-driven analysis of EBITDA margins across the coffee value chain.
 
 ## View the published project
 
-👉 https://abarriosgranado.github.io/Who-captures-the-value-/
+https://abarriosgranado.github.io/Who-captures-the-value-/
 
 ## About the project
 
