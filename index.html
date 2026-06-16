@@ -115,7 +115,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-top: 28px;
       margin-bottom: 34px;
@@ -132,6 +132,10 @@
       margin-top: 0;
     }
 
+    .wide-card {
+      grid-column: 1 / -1;
+    }
+
     .disclaimer {
       background: #2f3f3d;
       color: #f7f1e8;
@@ -145,6 +149,16 @@
     .disclaimer p {
       font-size: 18px;
       margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .wide-card {
+        grid-column: auto;
+      }
     }
 
     @media (max-width: 760px) {
@@ -177,10 +191,6 @@
 
       .section h3 {
         font-size: 21px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
       }
 
       p,
@@ -288,7 +298,7 @@
           </ul>
         </div>
 
-        <div class="mini-card">
+        <div class="mini-card wide-card">
           <h3>Data source</h3>
           <ul>
             <li>UK Companies House</li>
@@ -307,7 +317,7 @@
         </p>
         <img
           class="chart-image"
-          src="./graph_1_ebitda_margin_by_segment.png"
+          src="graph_1_ebitda_margin_by_segment.png"
           alt="Coffee value chain EBITDA margin by segment">
       </div>
 
@@ -318,7 +328,7 @@
         </p>
         <img
           class="chart-image"
-          src="./graph_2_importers_specialty_vs_mainstream.png"
+          src="graph_2_importers_specialty_vs_mainstream.png"
           alt="Importers specialty vs mainstream EBITDA margin">
       </div>
 
@@ -329,7 +339,7 @@
         </p>
         <img
           class="chart-image"
-          src="./graph_3_revenue_scale_vs_ebitda_margin.png"
+          src="graph_3_revenue_scale_vs_ebitda_margin.png"
           alt="Chains revenue scale vs EBITDA margin">
       </div>
     </section>
