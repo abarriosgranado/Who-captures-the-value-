@@ -12,7 +12,7 @@
       background: #f4efe6;
       color: #25211d;
       line-height: 1.7;
-      font-size: 19px;
+      font-size: 20px;
     }
 
     .page {
@@ -70,7 +70,7 @@
     }
 
     p {
-      font-size: 19px;
+      font-size: 20px;
       margin: 0 0 22px;
     }
 
@@ -81,18 +81,14 @@
     }
 
     li {
-      font-size: 19px;
+      font-size: 20px;
       margin-bottom: 10px;
     }
 
-    .formula {
-      background: #efe1cb;
-      border-left: 8px solid #8a5a2b;
-      padding: 22px 26px;
-      border-radius: 12px;
-      font-size: 21px;
-      font-weight: bold;
-      margin: 28px 0;
+    .plain-formula {
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0 0 22px;
     }
 
     .chart-card {
@@ -119,7 +115,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
       margin-top: 28px;
       margin-bottom: 34px;
@@ -142,12 +138,12 @@
       border-radius: 22px;
       padding: 38px 46px;
       font-style: italic;
-      font-size: 17px;
+      font-size: 18px;
       margin-top: 52px;
     }
 
     .disclaimer p {
-      font-size: 17px;
+      font-size: 18px;
       margin: 0;
     }
 
@@ -184,8 +180,13 @@
       }
 
       p,
-      li {
-        font-size: 17px;
+      li,
+      .plain-formula {
+        font-size: 18px;
+      }
+
+      .disclaimer p {
+        font-size: 16px;
       }
     }
   </style>
@@ -235,9 +236,9 @@
         For each company, Revenue, Operating profit, Depreciation &amp; Amortisation and EBITDA were collected. Where EBITDA was not explicitly reported, it was reconstructed as:
       </p>
 
-      <div class="formula">
+      <p class="plain-formula">
         EBITDA = Operating profit + Depreciation &amp; Amortisation
-      </div>
+      </p>
 
       <p>
         To ensure that larger businesses exerted an appropriate influence on segment-level results, revenue-weighted EBITDA margins were used throughout the analysis.
@@ -282,12 +283,14 @@
             <li>ChatGPT for research support, methodological validation and financial interpretation</li>
           </ul>
         </div>
-      </div>
 
-      <h3>Data source:</h3>
-      <ul>
-        <li>UK Companies House</li>
-      </ul>
+        <div class="mini-card">
+          <h3>Data source</h3>
+          <ul>
+            <li>UK Companies House</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="section">
