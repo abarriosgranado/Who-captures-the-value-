@@ -1,0 +1,1 @@
+This analysis is based solely on publicly available UK Companies House filings and company-published reports. Figures have been standardized for comparison and may differ from company-defined KPIs. This is not investment advice and should not be read as a judgement on company quality, management, or future performance.
