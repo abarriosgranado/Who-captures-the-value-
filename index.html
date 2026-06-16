@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Who operates most profitably?</title>
+</head>
+<body>
+
+  <h1>Who operates most profitably?</h1>
+
+  <h2>A data-driven analysis of EBITDA margins across the coffee value chain</h2>
+
+  <h2>1. Project objective</h2>
+
+  <p>
+    This study aims to identify which segment of the coffee value chain converts revenue into EBITDA most efficiently.
+  </p>
+
+  <p>
+    The analysis focuses on three segments of the industry: importers, roasters and retail coffee chains. EBITDA margin is used as the primary performance metric to assess each segment’s ability to translate commercial activity into operating profitability.
+  </p>
+
+  <p>
+    Beyond the core research question, two additional insights emerged from the analysis. First, the evidence suggests that specialisation may create an economic advantage across the coffee value chain, particularly within the upstream stages covered by this study. This effect is most visible among importers, where specialty operators consistently outperform the mainstream benchmark included in the sample. Coffee producers were not included due to the limited availability of comparable public financial information.
+  </p>
+
+  <p>
+    Second, the findings indicate that scale plays an important role in retail profitability. Larger chains generally achieve stronger margins, suggesting that operating scale may be a key driver of sustainable earnings in consumer-facing coffee businesses.
+  </p>
+
+  <h2>2. Methodology</h2>
+
+  <p>
+    The sample was built using publicly available financial information obtained from UK Companies House.
+  </p>
+
+  <p>
+    The analysis covers fiscal years 2022–2024. Fiscal years 2020 and 2021 were excluded due to the exceptional impact of COVID19 on both the coffee and hospitality industries.
+  </p>
+
+  <p>
+    For each company, Revenue, Operating profit, Depreciation &amp; Amortisation and EBITDA were collected. Where EBITDA was not explicitly reported, it was reconstructed as:
+  </p>
+
+  <p>
+    <strong>EBITDA = Operating profit + Depreciation &amp; Amortisation</strong>
+  </p>
+
+  <p>
+    To ensure that larger businesses exerted an appropriate influence on segment-level results, revenue-weighted EBITDA margins were used throughout the analysis.
+  </p>
+
+  <p>
+    Not all companies report on a calendar-year basis. To maintain consistency, each reporting period was assigned to the calendar year containing the majority of the months covered by the accounts.
+  </p>
+
+  <h2>3. Variables used</h2>
+
+  <h3>Financial variables:</h3>
+
+  <ul>
+    <li>Revenue</li>
+    <li>Operating profit</li>
+    <li>Depreciation &amp; Amortisation</li>
+    <li>EBITDA</li>
+    <li>EBITDA margin (%)</li>
+  </ul>
+
+  <h3>Analytical variables:</h3>
+
+  <ul>
+    <li>Segment (Importer, Roaster, Retail chain)</li>
+    <li>Years (2022–2024)</li>
+  </ul>
+
+  <h3>Technology stack:</h3>
+
+  <ul>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>PIL/Pillow</li>
+    <li>Codex for code generation, debugging and optimisation</li>
+    <li>ChatGPT for research support, methodological validation and financial interpretation</li>
+  </ul>
+
+  <h3>Data source:</h3>
+
+  <ul>
+    <li>UK Companies House</li>
+  </ul>
+
+  <h2>4. Explanation of the charts</h2>
+
+  <h3>Chart 1 – Operating profitability by segment</h3>
+
+  <p>
+    Compares revenue-weighted EBITDA margins across importers, roasters and retail chains.
+  </p>
+
+  <h3>Chart 2 – Specialty vs Mainstream importers</h3>
+
+  <p>
+    Compares the profitability of specialty coffee importers against the mainstream benchmark included in the sample.
+  </p>
+
+  <h3>Chart 3 – Scale and profitability in retail chains</h3>
+
+  <p>
+    Explores the relationship between company size and EBITDA margin within the retail segment.
+  </p>
+
+  <h2>5. Limitations</h2>
+
+  <p>
+    The sample remains relatively small and is not intended to represent the entire coffee industry.
+  </p>
+
+  <p>
+    The importer comparison includes only one mainstream operator and should therefore be interpreted as indicative rather than conclusive.
+  </p>
+
+  <p>
+    Differences in scale, business model and growth stage may also influence the results.
+  </p>
+
+  <p>
+    A reconciliation check was performed between reported EBITDA and a mechanical EBITDA proxy calculated as operating profit plus depreciation and amortisation. In some cases, material differences were identified, reflecting company-specific adjustments or classification effects. Therefore, EBITDA figures should be interpreted as a management-performance proxy rather than a fully standardised statutory metric.
+  </p>
+
+  <p>
+    Finally, some companies operate under non-calendar fiscal years, creating minor timing differences across observations.
+  </p>
+
+  <h2>6. Conclusions</h2>
+
+  <p>
+    This study examined how profitability is distributed across the coffee value chain and which business models are most effective at converting revenue into operating earnings.
+  </p>
+
+  <p>
+    At segment level, retail chains show the highest revenue-weighted EBITDA margins, although performance varies significantly across operators. This suggests that businesses positioned closest to the consumer are better able to capture value through branding, convenience, customer experience and product diversification.
+  </p>
+
+  <p>
+    However, the analysis also demonstrates that participation in retail alone does not guarantee profitability. Performance varies significantly across operators. While established chains generate attractive margins, several growth-oriented businesses remain EBITDA negative. The evidence indicates that scale is a critical driver of profitability, enabling operators to leverage fixed costs, improve purchasing power and convert pricing strength into sustainable earnings.
+  </p>
+
+  <p>
+    A second key insight emerges from the importing segment. Specialty coffee importers consistently outperform the mainstream benchmark included in the sample. Although coffee producers were not included due to the lack of comparable public financial information, the results suggest that the economic benefits associated with specialisation are particularly visible in the upstream stages of the value chain. Quality differentiation, traceability and direct sourcing relationships appear to create meaningful economic value reflected in superior margins.
+  </p>
+
+  <p>
+    Roasters occupy an intermediate position between importers and retailers. While they capture part of the value generated through product transformation and brand development, their profitability remains below that achieved by the largest retail operators.
+  </p>
+
+  <p>
+    Overall, the findings suggest that profitability within the coffee industry is driven by two distinct sources of competitive advantage: specialisation in the upstream stages of the value chain and scale in the downstream retail segment. Together, these mechanisms help explain how value is created and captured across the modern coffee industry.
+  </p>
+
+  <hr>
+
+  <p>
+    <em>
+      This analysis is based solely on publicly available UK Companies House filings and company-published reports. Figures have been standardized for comparison and may differ from company-defined KPIs. This is not investment advice and should not be read as a judgement on company quality, management, or future performance.
+    </em>
+  </p>
+
+</body>
+</html>
