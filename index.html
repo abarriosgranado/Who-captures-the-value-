@@ -9,7 +9,12 @@
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background: #f4efe6;
+      background:
+        linear-gradient(rgba(244, 239, 230, 0.88), rgba(244, 239, 230, 0.88)),
+        url("coffee-background.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: #25211d;
       line-height: 1.7;
       font-size: 20px;
@@ -45,7 +50,7 @@
     }
 
     .section {
-      background: #fffaf2;
+      background: rgba(255, 250, 242, 0.94);
       border-radius: 22px;
       padding: 52px 58px;
       margin-bottom: 46px;
@@ -92,7 +97,7 @@
     }
 
     .chart-card {
-      background: #f7f1e8;
+      background: rgba(247, 241, 232, 0.95);
       border: 1px solid #e0d3bf;
       border-radius: 20px;
       padding: 32px;
@@ -122,7 +127,7 @@
     }
 
     .mini-card {
-      background: #f7f1e8;
+      background: rgba(247, 241, 232, 0.95);
       border-radius: 16px;
       padding: 28px;
       border-top: 6px solid #8a5a2b;
@@ -132,8 +137,16 @@
       margin-top: 0;
     }
 
-    .wide-card {
-      grid-column: 1 / -1;
+    .data-source-card {
+      grid-column: 1 / 4;
+      background: rgba(247, 241, 232, 0.95);
+      border-radius: 16px;
+      padding: 28px;
+      border-top: 6px solid #8a5a2b;
+    }
+
+    .data-source-card h3 {
+      margin-top: 0;
     }
 
     .disclaimer {
@@ -156,12 +169,16 @@
         grid-template-columns: 1fr;
       }
 
-      .wide-card {
-        grid-column: auto;
+      .data-source-card {
+        grid-column: 1;
       }
     }
 
     @media (max-width: 760px) {
+      body {
+        background-attachment: scroll;
+      }
+
       .page {
         padding: 28px 18px 60px;
       }
@@ -267,6 +284,7 @@
       <h2>3. Variables used</h2>
 
       <div class="grid">
+
         <div class="mini-card">
           <h3>Financial variables</h3>
           <ul>
@@ -298,12 +316,13 @@
           </ul>
         </div>
 
-        <div class="mini-card wide-card">
+        <div class="data-source-card">
           <h3>Data source</h3>
           <ul>
             <li>UK Companies House</li>
           </ul>
         </div>
+
       </div>
     </section>
 
