@@ -26,10 +26,30 @@
       padding: 44px 58px 90px;
     }
 
+    .overview-image-section {
+      width: min(1320px, calc(100vw - 48px));
+      margin-left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 250, 242, 0.94);
+      border-radius: 22px;
+      padding: 18px;
+      margin-bottom: 36px;
+      box-shadow: 0 10px 28px rgba(55, 43, 28, 0.08);
+      border: 1px solid #eadfcd;
+    }
+
+    .overview-image {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid #ded3c2;
+      background: #f4efe6;
+    }
+
     .hero {
       background: #2f3f3d;
       color: #fff;
-      padding: 42px 48px;
+      padding: 34px 42px;
       border-radius: 26px;
       margin-bottom: 44px;
       box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
@@ -47,23 +67,6 @@
       font-size: 25px;
       font-weight: 400;
       color: #d8c8a8;
-    }
-
-    .overview-image-section {
-      background: rgba(255, 250, 242, 0.94);
-      border-radius: 22px;
-      padding: 24px;
-      margin-bottom: 46px;
-      box-shadow: 0 10px 28px rgba(55, 43, 28, 0.08);
-      border: 1px solid #eadfcd;
-    }
-
-    .overview-image {
-      width: 100%;
-      display: block;
-      border-radius: 16px;
-      border: 1px solid #ded3c2;
-      background: #f4efe6;
     }
 
     .section {
@@ -197,25 +200,26 @@
       }
 
       .page {
-        padding: 28px 18px 60px;
+        padding: 20px 16px 60px;
+      }
+
+      .overview-image-section {
+        width: calc(100vw - 20px);
+        padding: 8px;
+        margin-bottom: 26px;
       }
 
       .hero {
-        padding: 34px 26px;
+        padding: 28px 24px;
         margin-bottom: 32px;
       }
 
       .hero h1 {
-        font-size: 32px;
+        font-size: 31px;
       }
 
       .hero h2 {
-        font-size: 20px;
-      }
-
-      .overview-image-section {
-        padding: 12px;
-        margin-bottom: 34px;
+        font-size: 19px;
       }
 
       .section {
@@ -249,16 +253,16 @@
 
   <main class="page">
 
-    <section class="hero">
-      <h1>Who operates most profitably?</h1>
-      <h2>A data-driven analysis of EBITDA margins across the coffee value chain</h2>
-    </section>
-
     <section class="overview-image-section">
       <img
         class="overview-image"
         src="overview-infographic.png"
         alt="Coffee segments overview of EBITDA margins across the coffee value chain">
+    </section>
+
+    <section class="hero">
+      <h1>Who operates most profitably?</h1>
+      <h2>A data-driven analysis of EBITDA margins across the coffee value chain</h2>
     </section>
 
     <section class="section">
